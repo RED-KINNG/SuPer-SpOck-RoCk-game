@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Share+Tech+Mono&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family:'Black ops one','share tech mono', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #FC5C7D,#6A82FB );
+}
+
+.game-container{
+  width: 550px;
+  height: 600px;
+  background:  linear-gradient(to right, #a8ff78,#78ffd6 );
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -10px rgba(0,0, 0, 0.5);
+}
+
+.header {
+  background: linear-gradient(to left, #E0EAFC,#CFDEF3 );
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color:#c31432 ;
+  font-size: 30px;
+  text-align: center;
+}
+
+.player-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.fas {
+  font-size: 50px;
+  margin-right: 40px;
+  User-select: none;
+
+}
+
+#player .fas,
+#player .choice {
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+#computer .fas,
+#computer .choice {
+  color: red;
+  
+}
+
+#player .fas:last-of-type,
+#computer .fas:last-of-type {
+  margin-right: 0px;
+}
+
+.selected {
+  color: black !important;
+}
+
+
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+
+    height: 580px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .fas {
+    margin-right: 20px;
+    align-items: center;
+    margin-left: auto;
+    font-size: 40px;
+  }
+
+  #player .fas:first-of-type,
+  #computer .fas:first-of-type {
+  margin-left: 30px;
+}
+
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+
+  .game-container {
+    height: 550px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .fas {
+    font-size: 35px;
+    margin-right: 10px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+  
+
+}
+
+@media screen and (max-width: 290px) {
+  .fas {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  #player .fas:first-of-type,
+  #computer .fas:first-of-type {
+  margin-left: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
